@@ -16,6 +16,7 @@
   --white: #ffffff;
   --cloud: #f4f4fd;
   --cornflower: #e7e9fc;
+  --lightslate: #8e8f99;
 }
 
 body {
@@ -50,8 +51,8 @@ img {
 /* Header */
 .header {
   border-bottom: 1px solid var(--cornflower);
-  box-shadow: 0px 2px 1px, rgba(46, 47, 66, 0.08), 0px 1px 1px,
-    rgba(46, 47, 66, 0.16), 0px 1px 6px, rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .main-header {
@@ -257,8 +258,8 @@ li > .link:focus {
   background-color: var(--white);
   flex-basis: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
-  box-shadow: 0px 1px 6px, rgba(46, 47, 66, 0.08), 0px 1px 1px,
-    rgba(46, 47, 66, 0.16), 0px 2px 1px, rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-member {
@@ -295,6 +296,53 @@ li > .link:focus {
   align-items: center;
   justify-content: center;
 }
+
+.socmed-icon-link:hover,
+.socmed-icon-link:focus {
+  background-color: var(--ocean);
+}
+
+.socmed-icon {
+  fill: var(--cloud);
+}
+
+/* Section 5 */
+
+.customer-gallery {
+  padding: 120px 0;
+}
+
+.customers {
+  display: flex;
+  gap: 24px;
+}
+
+.customer-gallery-list {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
+
+.icon-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--lightslate);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--lightslate);
+}
+
+.customer-icon {
+  fill: currentColor;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  border-color: var(--ocean);
+  color: var(--ocean);
+}
+
 
 /* Footer */
 
