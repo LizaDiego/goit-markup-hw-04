@@ -23,41 +23,41 @@
 </head>
 
 <body>
-<!-- Header -->
+<!-- This is the top header -->
 <header class="header">
     <div class="main-header container">
     <nav class="nav">
-            <a href="./index.html" class="logo link">Web<span class="header-studio">Studio</span>
+            <a class="logo link" href="./index.html">Web<span class="header-studio">Studio</span>
             </a>
             <ul class="header list">
                 <li class="header-item">
-                    <a href="./index.html" class="top link">Studio</a>
+                    <a class="top link" href="./index.html">Studio</a>
                 </li>
                 <li class="header-item">
-                    <a href="./portfolio.html" class="top link">Portfolio</a>
+                    <a class="top link" href="./portfolio.html">Portfolio</a>
                 </li>
                 <li class="header-item">
-                    <a href="" class="top link">Contacts</a>
+                    <a class="top link" href="">Contacts</a>
                 </li>
             </ul>
     </nav>
     <address class="address">
             <ul class="address list">
                 <li class="address-item">
-                    <a href="mailto:info@devstudio.com" class="info link">info@devstudio.com</a>
+                    <a class="info link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
                 <li class="address-item">
-                    <a href="tel:+110001111111" class="info link">+11 (000) 111-11-11</a>
+                    <a class="info link" href="tel:+110001111111">+11 (000) 111-11-11</a>
                 </li>
             </ul>
     </address>
     </div>
 </header>
 
-<!-- Main -->
+<!-- Main with 4 sections -->
 <main>
 <!-- Section 1 -->
-    <section class="hero">
+    <section class="hero">       
         <div class="container">
         <h1 class="hero-text">Effective Solutions for Your Business
         </h1>
@@ -72,24 +72,44 @@
         <h2 class="visually-hidden">Feature List</h2>
         <ul class="info-card list">
             <li class="feature-card">
+                <div class="feature-icon-container">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" id="antenna">
+                    <use href="./images/SVG-sprite-icons.svg#antenna"></use> 
+                  </svg>
+                </div>
                 <h3 class="feature-title">Strategy</h3>
                 <p class="feature-text">Our goal is to identify the business problem to walk away with the perfect and creative
                     solution.</p>
             </li>
     
             <li class="feature-card">
+                <div class="feature-icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" id="clock">
+                        <use href="./images/SVG-sprite-icons.svg#clock"></use>
+                    </svg>
+                </div>
                 <h3 class="feature-title">Punctuality</h3>
                 <p class="feature-text"> Bring the key message to the brand's audience for the best price within the shortest
                     possible time.</p>
             </li>
     
             <li class="feature-card">
+                <div class="feature-icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" id="diagram">
+                        <use href="./images/SVG-sprite-icons.svg#diagram"></use>
+                    </svg>
+                </div>
                 <h3 class="feature-title">Diligence</h3>
                 <p class="feature-text">Research and confirm brands that present the strongest digital growth opportunities and
                     minimize risk.</p>
             </li>
     
             <li class="feature-card">
+                <div class="feature-icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" id="astronaut">
+                        <use href="./images/SVG-sprite-icons.svg#astronaut"></use>
+                    </svg>
+                </div>
                 <h3 class="feature-title">Technologies</h3>
                 <p class="feature-text">Design practice focused on digital experiences. We bring forth a deep passion for
                     problem-solving.</p>
@@ -126,7 +146,20 @@
                 <div class="team-member">
                 <h3 class="feature-title">Mark Guerrero</h3>
                 <p class="feature-text">Product Designer</p>
-                </div>       
+                  <ul class="social-media-icons list">
+                      <li class="socmed-icon-list">
+                        <a class="socmed-icon-link" href="">
+                            <svg class="socmed-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                <use href="./images/SVG-sprite-icons.svg#instgram"></use>
+                            </svg>
+                        </a>
+                      </li>
+                      <li class="socmed-icon-list"></li>
+                      <li class="socmed-icon-list"></li>
+                      <li class="socmed-icon-list"></li>
+                  </ul>
+                </div>
+                
             </li>
             <li class="team-item">
                 <img src="./images/smiling-man-looking-right.jpg" width="264" alt="smiling-man-looking-right" />

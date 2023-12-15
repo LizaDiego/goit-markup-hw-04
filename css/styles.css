@@ -37,7 +37,6 @@ body {
 
 .link {
   text-decoration: none;
-  padding: 24px 0;
 }
 
 .list {
@@ -51,14 +50,17 @@ img {
 /* Header */
 .header {
   border-bottom: 1px solid var(--cornflower);
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 
-    0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px, rgba(46, 47, 66, 0.08), 0px 1px 1px,
+    rgba(46, 47, 66, 0.16), 0px 1px 6px, rgba(46, 47, 66, 0.08);
 }
 
 .main-header {
   display: flex;
   justify-content: space-between;
+}
+
+.header.list {
+  padding: 24px 0;
 }
 
 .container {
@@ -116,12 +118,14 @@ li > .link:focus {
 .hero {
   background-color: var(--navyblue);
   padding: 188px 0;
-  background-image: linear-gradient(rgba(46, 47, 66, 0. 7), 
-    rgba(46, 47, 66, 0.7)), 
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
     url(../images/people-office.jpg);
   max-width: 1440px;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
   background-size: cover;
 }
 
@@ -184,6 +188,16 @@ li > .link:focus {
   flex-basis: calc((100% - 72px) / 4);
 }
 
+.feature-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: var(--cloud);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
 .info-card .feature-title,
 .product .feature-title {
   margin-bottom: 8px;
@@ -243,6 +257,8 @@ li > .link:focus {
   background-color: var(--white);
   flex-basis: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 6px, rgba(46, 47, 66, 0.08), 0px 1px 1px,
+    rgba(46, 47, 66, 0.16), 0px 2px 1px, rgba(46, 47, 66, 0.08);
 }
 
 .team-member {
@@ -256,6 +272,28 @@ li > .link:focus {
 
 .feature-text {
   text-align: center;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.socmed-icon-list {
+  width: 40px;
+  height: 40px;
+}
+
+.socmed-icon-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Footer */
