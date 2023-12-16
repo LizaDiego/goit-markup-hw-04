@@ -17,6 +17,8 @@
   --cloud: #f4f4fd;
   --cornflower: #e7e9fc;
   --lightslate: #8e8f99;
+  --green: #31d0aa;
+  
 }
 
 body {
@@ -367,10 +369,58 @@ li > .link:focus {
   margin-bottom: 16px;
 }
 
+.footer > .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.wrapper {
+  margin-right: 120px;
+}
+
+.footer-menu-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.footer-socmed {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-socmed-icons {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-socmed-links {
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-socmed-links:hover,
+.footer-socmed-links:focus {
+  background-color: var(--green);
+}
+
+.footer-socmed-svg {
+  fill: var(--cloud);
+}
+
 /* Portfolio Page */
 .product-services {
   padding: 96px 0 120px 0;
 }
+
 
 .button-menu {
   font-family: inherit;
