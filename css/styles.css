@@ -469,3 +469,14 @@ li > .link:focus {
   border: 1px solid var(--cornflower);
   border-top: none;
 }
+
+.product-info.link {
+  display: block;
+}
+
+.product-info.link:hover,
+.product-info.link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16),
+  0px 2px 1px rgba(46, 47, 66, 0.08);
+}
